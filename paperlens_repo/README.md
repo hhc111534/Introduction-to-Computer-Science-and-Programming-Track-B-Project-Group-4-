@@ -32,7 +32,7 @@ data/                  本地上传文件与缓存（不提交到 Git）
 - [ ] 实现 Flask 页面与划词交互
 - [ ] 完成测试、文档与演示
 ## AI 使用记录
-所有 AI 辅助工作统一记录在 [`docs/ai-usage.md`](docs/ai-usage.md)。
+所有 AI 辅助工作统一记录在 [`docs/logs-members.md`](docs/logs-members.md)。
 - 每个 AI 辅助任务或 PR 记录一行；
 - 由使用 AI 的成员本人填写；
 - 由 Review 人确认代码已测试、可解释；
