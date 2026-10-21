@@ -32,13 +32,13 @@ data/                  本地上传文件与缓存（不提交到 Git）
 - [ ] 实现 Flask 页面与划词交互
 - [ ] 完成测试、文档与演示
 ## AI 使用记录
-所有 AI 辅助工作统一记录在 [`docs/logs-members.md`](docs/logs-members.md)。
+所有 AI 辅助工作统一记录在 [`docs/ai-usage.md`](docs/ai-usage.md)。
 - 每个 AI 辅助任务或 PR 记录一行；
 - 由使用 AI 的成员本人填写；
 - 由 Review 人确认代码已测试、可解释；
 - 不得记录 API Key、未公开论文或个人隐私。
 ## 开发约定
-- 开发日志记录在[`docs/ai-usage.md`](docs/ai-usage.md)
+- 开发日志记录在[`docs/logs-members.md`](docs/logs-members.md)
 - 每个模块由对应成员负责，跨模块修改需要提前沟通；
 - 共享接口变更必须经过 Review；
 - 所有改动通过分支和 Pull Request 合并，不直接 push `main`；
