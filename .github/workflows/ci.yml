@@ -1,0 +1,13 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Placeholder check
+        run: echo "CI will run tests after dependencies and test files are implemented."

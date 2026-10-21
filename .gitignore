@@ -1,0 +1,38 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Local data
+data/*
+!data/uploads/
+!data/cache/
+data/uploads/*
+data/cache/*
+!data/uploads/.gitkeep
+!data/cache/.gitkeep
+
+# Databases, logs, generated files
+*.sqlite3
+*.db
+*.log
+dist/
+build/
+*.egg-info/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
