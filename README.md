@@ -25,10 +25,12 @@ paperlens/
   common/              共享数据结构、错误处理、缓存
 prompts/               版本化的 Prompt 文件
 tests/                 单元测试与集成测试
-docs/                  项目提案、架构、API、数据模型、AI 使用日志
+docs/                  项目提案、架构、API、数据模型、文件说明、AI 使用日志
 data/                  本地上传文件与缓存（不提交到 Git）
 .github/               CI、PR 模板、Issue 模板
 ```
+
+每个空文件的用途、负责人和填写建议见 [`docs/FILE_GUIDE.md`](docs/FILE_GUIDE.md)。
 
 ## 当前进度
 
