@@ -114,6 +114,8 @@
 | `.env.example` | 本地环境变量示例 |
 | `AGENTS.md` | AI coding 工具的项目规则 |
 | `docs/ai-usage.md` | AI 使用日志，成员本人填写 |
+| `docs/logs-members.md` | 成员人工开发日志 |
+| `docs/FILE_GUIDE.md` | 本文件，逐项说明空文件与负责人 |
 | `.github/workflows/ci.yml` | 占位 CI，后续替换为真实测试 |
 | `.github/pull_request_template.md` | PR 模板，包含 AI 使用声明 |
 
