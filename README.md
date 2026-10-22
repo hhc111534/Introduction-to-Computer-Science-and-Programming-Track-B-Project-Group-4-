@@ -53,9 +53,9 @@ data/                  本地上传文件与缓存（不提交到 Git）
 - 由 Review 人确认代码已测试、可解释；
 - 不得记录 API Key、未公开论文或个人隐私。
 
-## 开发日志
+## 人工开发日志
 
-成员的人工开发进展记录在 [`docs/logs-members.md`](docs/logs-members.md)。
+所有成员的人工开发进展按时间顺序共同记录在 [`docs/logs-members.md`](docs/logs-members.md)，不按成员分开填写。
 
 ## 开发约定
 
