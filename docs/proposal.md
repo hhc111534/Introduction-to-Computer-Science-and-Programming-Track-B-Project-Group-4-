@@ -1,3 +1,4 @@
+proposal form deepseek
 # PaperLens 项目提案
 
 > **状态**：草案 v0.1（待小组评审）
