@@ -112,8 +112,10 @@
 | `README.md` | 项目介绍、分工、目录结构、开发约定 |
 | `.gitignore` | 忽略虚拟环境、密钥、论文、缓存等 |
 | `.env.example` | 本地环境变量示例 |
-| `AGENTS.md` | AI coding 工具的项目规则 |
+| `AGENTS.md` | Codex / AI coding 工具的项目规则 |
+| `.codex/config.toml` | Codex 项目级沙箱、审批和网络配置 |
 | `docs/ai-usage.md` | AI 使用日志，成员本人填写 |
+| `docs/codex.md` | Codex 安装、登录和使用说明 |
 | `docs/TEAM_ROLES.md` | 四人分工方案，成员填写姓名并确认 |
 | `docs/logs-members.md` | 全体成员按时间顺序共同记录的人工开发日志 |
 | `docs/FILE_GUIDE.md` | 本文件，逐项说明空文件与负责人 |

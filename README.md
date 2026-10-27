@@ -57,6 +57,12 @@ data/                  本地上传文件与缓存（不提交到 Git）
 
 所有成员的人工开发进展按时间顺序共同记录在 [`docs/logs-members.md`](docs/logs-members.md)，不按成员分开填写。
 
+## Codex 接入
+
+组员使用 Codex 的安装、登录、项目配置和工作流说明见 [`docs/codex.md`](docs/codex.md)。
+
+Codex 会自动读取仓库根目录的 [`AGENTS.md`](AGENTS.md)，并在项目被信任后加载 [`.codex/config.toml`](.codex/config.toml)。
+
 ## 开发约定
 
 - 每个模块由对应成员负责，跨模块修改需要提前沟通；

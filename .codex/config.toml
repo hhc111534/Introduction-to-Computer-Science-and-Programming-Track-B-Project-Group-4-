@@ -1,0 +1,15 @@
+# Project-scoped Codex configuration.
+# Loaded only after this repository is trusted.
+
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
+project_doc_max_bytes = 65536
+
+[sandbox_workspace_write]
+# Keep network off by default. Approve it explicitly only when a task needs it.
+network_access = false
+
+[shell_environment_policy]
+inherit = "core"
+# Exclude variables whose names contain KEY, SECRET, or TOKEN from child processes.
+ignore_default_excludes = false

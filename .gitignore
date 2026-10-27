@@ -14,6 +14,10 @@ htmlcov/
 .env.*
 !.env.example
 
+# Codex local state; keep project config
+.codex/*
+!.codex/config.toml
+
 # Local data
 data/*
 !data/uploads/
