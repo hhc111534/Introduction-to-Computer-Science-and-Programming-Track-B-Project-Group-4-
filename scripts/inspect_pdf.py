@@ -4,10 +4,12 @@ import pymupdf
 def show_page(p,n):
     h=p.rect.height
     blks=p.get_text("blocks")
+    nchar=len(p.get_text())
 
     print()
     print(f"=== 第 {p.number + 1} 页 ===")
     print(f"块的数量：{len(blks)}")
+    print(f"字符数：{nchar}")
     print(f"页面高度：{round(h)}")
 
     for b in blks:
