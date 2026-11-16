@@ -4,6 +4,8 @@ import os
 import pymupdf
 
 from paperlens.common.models import Document, Page, Paragraph
+from paperlens.pdf.cleaner import clean_blocks, clean_text
+from paperlens.pdf.quality import check_text_layer
 
 
 def file_sha(path):
@@ -40,12 +42,7 @@ def page_blocks(p):
 
 
 def block_text(b):
-    lines=[]
-    for line in b[4].split("\n"):
-        line=line.strip()
-        if line!="":
-            lines.append(line)
-    return " ".join(lines)
+    return clean_text(b[4])
 
 
 def blocks_to_paras(blocks,pno,base):
@@ -78,6 +75,7 @@ def blocks_to_paras(blocks,pno,base):
 
 def extract_pdf(path):
     d=open_pdf(path)
+    rep=check_text_layer(d)
     fp=file_sha(path)
 
     pages=[]
@@ -87,6 +85,7 @@ def extract_pdf(path):
     for pno in range(d.page_count):
         p=d[pno]
         blks=page_blocks(p)
+        blks=clean_blocks(blks,p.rect.height)
         paras=blocks_to_paras(blks,pno,base)
 
         texts=[]
@@ -99,7 +98,7 @@ def extract_pdf(path):
             start=base,
             text=ptext,
             paragraphs=paras,
-            has_text_layer=len(ptext)>0,
+            has_text_layer=rep["page_chars"][pno]>0,
         ))
 
         all_paras.extend(paras)
